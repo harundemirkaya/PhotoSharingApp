@@ -75,6 +75,7 @@
                             <constraint firstItem="DZU-5B-NSv" firstAttribute="trailing" secondItem="CJb-EZ-mcB" secondAttribute="trailing" id="ujq-f3-NBs"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="ltV-8l-vAd"/>
                     <connections>
                         <outlet property="txtFieldEmail" destination="CJb-EZ-mcB" id="SBn-lq-mRg"/>
                         <outlet property="txtFieldPassword" destination="mFK-R3-npQ" id="Gq7-Af-tbx"/>
@@ -126,6 +127,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="plus.rectangle.fill" catalog="system" id="QRf-SO-7fU"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="toSignVC" modalPresentationStyle="fullScreen" id="lzq-oe-w19"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nhz-E6-2IL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -150,7 +154,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="S4u-A3-6UC">
             <objects>
-                <tabBarController id="exR-iQ-4td" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBar" id="exR-iQ-4td" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="qvh-Ko-Z7B"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HPM-tI-KKQ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
