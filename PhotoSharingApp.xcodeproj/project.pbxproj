@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4F186AE0295CCBE80036EF45 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F186ADF295CCBE80036EF45 /* FeedCell.swift */; };
+		4F186AE2295CD4970036EF45 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F186AE1295CD4960036EF45 /* Post.swift */; };
+		4F186AE5295CDD3C0036EF45 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 4F186AE4295CDD3C0036EF45 /* SDWebImage */; };
 		4F1D405A295C8D6100B28287 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 4F1D4059295C8D6100B28287 /* FirebaseAuth */; };
 		4F1D405C295C8D6100B28287 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 4F1D405B295C8D6100B28287 /* FirebaseFirestore */; };
 		4F1D405E295C8D6100B28287 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 4F1D405D295C8D6100B28287 /* FirebaseStorage */; };
@@ -25,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		4F186ADF295CCBE80036EF45 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		4F186AE1295CD4960036EF45 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		4F1FDFC8295A08EB0013F6E6 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		4F1FDFCA295A09000013F6E6 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		4F1FDFCC295A092B0013F6E6 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +49,7 @@
 			files = (
 				4F1D405A295C8D6100B28287 /* FirebaseAuth in Frameworks */,
 				4F1D405C295C8D6100B28287 /* FirebaseFirestore in Frameworks */,
+				4F186AE5295CDD3C0036EF45 /* SDWebImage in Frameworks */,
 				4F1D405E295C8D6100B28287 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,6 +83,7 @@
 				4F1FDFCA295A09000013F6E6 /* UploadViewController.swift */,
 				4F1FDFCC295A092B0013F6E6 /* SettingsViewController.swift */,
 				4F186ADF295CCBE80036EF45 /* FeedCell.swift */,
+				4F186AE1295CD4960036EF45 /* Post.swift */,
 				4FF178102959FA1D0012B22D /* Main.storyboard */,
 				4FF178132959FA1E0012B22D /* Assets.xcassets */,
 				4FF178152959FA1E0012B22D /* LaunchScreen.storyboard */,
@@ -108,6 +113,7 @@
 				4F1D4059295C8D6100B28287 /* FirebaseAuth */,
 				4F1D405B295C8D6100B28287 /* FirebaseFirestore */,
 				4F1D405D295C8D6100B28287 /* FirebaseStorage */,
+				4F186AE4295CDD3C0036EF45 /* SDWebImage */,
 			);
 			productName = PhotoSharingApp;
 			productReference = 4FF178072959FA1D0012B22D /* PhotoSharingApp.app */;
@@ -139,6 +145,7 @@
 			mainGroup = 4FF177FE2959FA1D0012B22D;
 			packageReferences = (
 				4F1D4058295C8D6000B28287 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				4F186AE3295CDD3C0036EF45 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = 4FF178082959FA1D0012B22D /* Products */;
 			projectDirPath = "";
@@ -171,6 +178,7 @@
 				4F186AE0295CCBE80036EF45 /* FeedCell.swift in Sources */,
 				4FF1780F2959FA1D0012B22D /* ViewController.swift in Sources */,
 				4F1FDFCB295A09000013F6E6 /* UploadViewController.swift in Sources */,
+				4F186AE2295CD4970036EF45 /* Post.swift in Sources */,
 				4FF1780B2959FA1D0012B22D /* AppDelegate.swift in Sources */,
 				4F1FDFC9295A08EB0013F6E6 /* FeedViewController.swift in Sources */,
 				4FF1780D2959FA1D0012B22D /* SceneDelegate.swift in Sources */,
@@ -394,6 +402,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		4F186AE3295CDD3C0036EF45 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		4F1D4058295C8D6000B28287 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -405,6 +421,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		4F186AE4295CDD3C0036EF45 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F186AE3295CDD3C0036EF45 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
 		4F1D4059295C8D6100B28287 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 4F1D4058295C8D6000B28287 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

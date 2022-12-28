@@ -50,7 +50,6 @@ class ViewController: UIViewController {
         let okButton = UIAlertAction(title: "Okey", style: UIAlertAction.Style.default)
         alertMessage.addAction(okButton)
         self.present(alertMessage, animated: true)
-        
     }
 }
 
