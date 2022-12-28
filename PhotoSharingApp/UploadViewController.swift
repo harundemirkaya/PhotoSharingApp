@@ -59,6 +59,10 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate, U
                                 fireStoreDB.collection("Post").addDocument(data: fireStorePost) { err in
                                     if err != nil{
                                         self.alertMessage(title: "Error", description: err!.localizedDescription)
+                                    } else{
+                                        self.imgViewPhoto.image = UIImage(named: "select")
+                                        self.txtFieldDescription.text = ""
+                                        self.tabBarController?.selectedIndex = 0
                                     }
                                 }
                             }
