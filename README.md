@@ -10,10 +10,10 @@ The libraries and requirements I use are listed below.
 <h2>Libraries I use:</h2>
 
 - <a href="https://github.com/firebase/">Firebase</a>
-- <a href="hhttps://github.com/firebase/">Firestore</a>
+- <a href="https://github.com/firebase/">Firestore</a>
 - <a href="https://github.com/firebase/">Firebase Storage</a>
 - <a href="https://github.com/SDWebImage">SDWebImage</a>
 
 <h2>Database I use:</h2>
 
-- <a href="hhttps://github.com/firebase/">Firestore</a>
+- <a href="https://github.com/firebase/">Firestore</a>
