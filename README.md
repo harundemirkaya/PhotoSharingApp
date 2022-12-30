@@ -1,4 +1,8 @@
 # PhotoSharingApp
+<p align="center">
+  <a href="http://nestjs.com/" target="blank"><img src="https://cdn.iconscout.com/icon/free/png-256/swift-13-722653.png" width="200" alt="Nest Logo" /></a>
+</p>
+
 Photo Sharing App with Swift
 I coded a photo sharing application using Swift language. The application includes the features of registering, logging in, uploading photos, viewing the photos uploaded by all users and logging out.
 The libraries and requirements I use are listed below.
